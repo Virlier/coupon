@@ -1,0 +1,91 @@
+html, body, header, section, aside, footer, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 1366px;
+    font-family: "微软雅黑", Arial, "Microsoft Yahei";
+    font-size: 14px;
+    color: #333333;
+}
+body {
+	min-height: 100%;
+	position: relative;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    display: block;
+    border: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.lt {
+    float: left;
+}
+.rt {
+    float: right;
+}
+input[type=text], textarea, select {
+    box-sizing: border-box;
+    height: 45px;
+    padding: 5px 15px;
+    border: 1px solid #979797;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    border-radius: 0;
+    font-family: arial,"microsoft yahei";
+    font-size: 14px;
+    line-height: 25px;
+    transition: border-color 0.2s;
+
+    background-color: #fff;
+}
+input[type=button] {
+    height: 45px;
+    font-family: "微软雅黑", Arial, "Microsoft Yahei";
+}
+select::-ms-expand { display: none; }
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #fff !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #D28D51;
+}
+select {
+    background-image: url(img/caret.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #747474;
+}
+input[type=number] {
+    width: 50px;
+    height: 15px;
+    padding: 6px 12px;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}

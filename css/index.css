@@ -1,0 +1,1386 @@
+/* 顶部导航 */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 10;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+.logo {
+    margin-top: 18px;
+}
+.nav-list {
+    width: 600px;
+    height: 80px;
+}
+.nav-item {
+    width: 95px;
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 65px;
+}
+.nav-item:hover {
+    transition: color 0.2s;
+    color: #D28D51;
+}
+.nav-item:last-child {
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 22px;
+    float: right;
+    background-color: #D28D51;
+    color: #fff;
+    transition: all 0.2s;
+}
+.nav-item:last-child:hover {
+    background-color: #cd8141;
+    color: #FFA759;
+}
+/* 汉堡菜单 */
+.hamburger {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 30;
+    cursor: pointer;
+    display: none;
+}
+.hamburger-item {
+    width: 34px;
+    height: 5px;
+    background: #D28D51;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 15;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.hamburger-top {
+    top: 4px;
+    left: 3px;
+}
+.hamburger-middle {
+    top: 16px;
+    left: 3px;
+}
+.hamburger-bottom {
+    top: 28px;
+    left: 3px;
+}
+    /* 点击后的样式 */
+.hamburger-close .hamburger-item { height: 3px; }
+.hamburger-close .hamburger-top {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.hamburger-close .hamburger-middle { opacity: 0; }
+.hamburger-close .hamburger-bottom {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+.nav_mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+    position: fixed;
+    top: -100%;
+    left: 0;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -ms-transition: top .5s;
+    transition: top .5s;
+    overflow: hidden;
+    z-index: 25;
+}
+    /* 汉堡菜单激活后的导航样式 */
+.mask_active { top: 0; }
+.nav-items {
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/* banner */
+.banner {
+    height: 100%;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-content {
+    width: 934px;
+    height: auto;
+    margin: 200px auto 0;
+}
+.banner-title {
+    width: 934px;
+}
+.banner-text {
+    width: 860px;
+    margin: 35px auto 0;
+    font-size: 24px;
+    color: #fff;
+    line-height: 45px;
+    opacity: 0.8;
+}
+.banner-text strong {
+    font-size: 50px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.arrow {
+    margin-top: 120px;
+    text-align: center;
+}
+.arrow > img { display: inline-block; cursor: pointer; }
+.banner-title-mob { display: none; }
+
+/* 基础套餐，超值票价 */
+.ticket-group {
+    height: auto;
+}
+.ticket-group > .container {
+    overflow: visible;
+}
+.coupon-item-title {
+    margin: 135px auto 0;
+    text-align: center;
+    color: #D28D51;
+}
+.coupon-item-title > h1 > img {
+    display: inline-block;
+}
+.underline {
+    width: 210px;
+    height: 3px;
+    background-color: #D28D51;
+    margin: 15px auto 0;
+}
+.ticket-table { margin-top: 50px; }
+.ticket-column {
+    box-sizing: border-box;
+	width: 370px;
+    height: 700px;
+    border-top: 0;
+}
+.second-column {
+    margin: 0 45px;
+}
+.ticket-row {
+	box-sizing: border-box;
+	height: 120px;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    padding: 0 15px;
+}
+.ticket-row-bg {
+    border-left: 0;
+    border-right: 0;
+}
+.ticket-row-container {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+	text-align: center;
+	width: 370px;
+	height: 120px;
+    border-bottom: 1px solid #989898;
+    border-top: 0;
+}
+.ticket-row-bg .ticket-row-container { border-bottom: 0; }
+.industry-type {
+	color: #fff;
+	margin-bottom: 10px;
+    position: relative;
+}
+.note {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+}
+.note > i {
+    width: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 100%;
+    vertical-align: top;
+    color: #d28d51;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    zoom: 1;
+}
+.note-wrap {
+    width: 270px;
+    position: absolute;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    bottom: 100%;
+    left: -55px;
+    z-index: 11;
+    display: none;
+}
+.note:hover .note-wrap {
+    display: block;
+}
+.note-wrap em {
+    padding: 10px 15px;
+    background: #6f6f6f;
+    font-weight: normal;
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-align: left;
+}
+.note-wrap:after {
+    width: 0;
+    height: 0;
+    content: "";
+    border: 8px transparent solid;
+    border-top: 8px #6f6f6f solid;
+    position: absolute;
+    bottom: -6px;
+    left: 56px;
+}
+.industry-price {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+.ticket-title {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.sup {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #b3b2b2;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.choose-one {
+	margin-bottom: 10px;
+}
+.price-container {
+    margin-top: 15px;
+}
+.standard-price, .coupon-price {
+    display: inline-block;
+	font-size: 15px;
+	text-decoration: line-through;
+    color: #666;
+}
+.standard-price { margin-right: 20px; }
+.coupon-price {
+	text-decoration: none;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+.last-row {
+    height: 100px;
+    border-bottom: 1px solid #989898;
+}
+.last-row > .ticket-row-container {
+    height: 100px;
+    border-bottom: 0;
+}
+.buy-btn {
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #D28D51;
+	color: #fff;
+	font-size: 16px;
+	transition: all 0.2s;
+}
+.hotel-industry {
+    background-color: #EAB53A;
+}
+.hotel-industry:hover {
+    background-color: #E4AE36;
+    color: #FFD258;
+}
+.other-tourism {
+    background-color: #E6893E;
+}
+.other-tourism:hover {
+    background-color: #EA8637;
+    color: #FFAB5D;
+}
+.not-tourism {
+    background-color: #E16449;
+}
+.not-tourism:hover {
+    background-color: #D45538;
+    color: #FF7251;
+}
+.tips-wrapper {
+    clear: both;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.tips-list { margin-top: 10px; }
+.tips-item { line-height: 25px; }
+.tips-num, .tips-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+}
+.tips-num {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #b3b2b2;
+    margin-right: 5px;
+}
+    /* 弹窗：备注信息 */
+.tips-mob-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 3000;   
+}
+.tips-mob-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 3000;
+}
+
+.ticket-mob-container { display: none; }
+.ticket-mob-bullets { display: none; }
+.tips-mob-wrapper { display: none; }
+
+/* 品质活动，抢先占座 */
+.activity {
+    clear: both;
+    overflow: hidden;
+}
+.activity-list {
+    margin-top: 70px;
+}
+.activity-item {
+    height: 575px;
+    overflow: hidden;
+}
+.left-bg, .right-bg {
+    width: 50%;
+    height: 100%;
+}
+.hmc-bg {
+    position: relative;
+    background-image: url(img/activity-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.mask-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    transition: all 0.2s;
+}
+.mask-content-wrapper > a {
+    width: 100%;
+    height: 100%;
+}
+.mask-link-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 50px;
+    margin-left: -140px;
+    margin-top: -25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+.mask-link-item > a { color: #fff; }
+.mask-arrow {
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    background-image: url(img/go-arrow-white.png);
+    margin-left: 10px;
+}
+.hmc-bg:hover .mask, .tdc-bg:hover .mask, .adc-bg:hover .mask, .tday-bg:hover .mask, .webinar-bg:hover .mask {
+    opacity: 0.5;
+}
+.hmc-bg:hover .mask-content-wrapper, .tdc-bg:hover .mask-content-wrapper, .adc-bg:hover .mask-content-wrapper, .tday-bg:hover .mask-content-wrapper, .webinar-bg:hover .mask-content-wrapper {
+    display: block;
+}
+.activity-hmc, .activity-adc, .activity-webinar {
+    /*width: 600px;*/
+    /*min-width: 600px;*/
+    width: 430px;
+    min-width: 430px;
+    height: 325px;
+    margin: 125px 0 125px 350px;
+}
+.hmc-title, .tdc-title, .adc-title, .tday-title, .webinar-title {
+    color: #000;
+    margin-bottom: 70px;
+}
+.time, .locate {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #D28D51;
+}
+.time { margin-right: 30px; }
+.time b, .locate b, .time span, .locate span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.time b, .locate b {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-image: url(img/clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.locate b {
+    background-image: url(img/locate.png);
+}
+.hmc-intro, .tdc-intro, .adc-intro, .tday-intro, .webinar-intro {
+    margin: 30px 0;
+    line-height: 25px;
+}
+.hmc2016-link, .tdc2016-link, .adc2016-link, .tday-link {
+    display: block;
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    color: #5C5C5C;
+    transition: all 0.2s;
+}
+.hmc2016-link > span, .hmc2016-link > .go-arrow, .tdc2016-link > span, .tdc2016-link > .go-arrow, .adc2016-link > span, .adc2016-link > .go-arrow, .tday-link > span, .tday-link > .go-arrow {
+	display: inline-block;
+	vertical-align: middle;
+}
+.hmc2016-link > .go-arrow, .tdc2016-link > .go-arrow, .adc2016-link > .go-arrow, .tday-link > .go-arrow {
+	width: 23px;
+	height: 9px;
+	margin-left: 5px;
+	background-image: url(img/go-arrow.png);
+}
+.hmc2016-link:hover, .tdc2016-link:hover, .adc2016-link:hover, .tday-link:hover {
+    border-color: #D28D51;
+    color: #D28D51;
+}
+.hmc2016-link:hover .go-arrow, .tdc2016-link:hover .go-arrow, .adc2016-link:hover .go-arrow, .tday-link:hover .go-arrow {
+	background-image: url(img/go-arrow2.png);
+}
+.tdc-bg {
+    position: relative;
+    background-image: url(img/activity-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: none;
+    cursor: pointer;
+}
+.adc-bg {
+	position: relative;
+    background-image: url(img/activity-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: none;
+    cursor: pointer;
+}
+.activity-tdc, .activity-tday {
+    /*width: 460px;*/
+    /*min-width: 460px;*/
+    width: 435px;
+    min-width: 435px;
+    height: 300px;
+    float: right;
+    margin: 125px 350px 0 0;
+}
+.tday-bg {
+    position: relative;
+    cursor: pointer;
+    background-image: url(img/activity-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.webinar-bg {
+    position: relative;
+    cursor: pointer;
+    background-image: url(img/activity-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: none;
+}
+.activity-webinar {
+    margin: 160px 0 0 350px;
+}
+.activity-list-mob { display: none; }
+/* 评价 */
+.comment {
+    height: 800px;
+    background-color: #F6F5F3;
+}
+.comment-wrapper {
+    position: relative;
+    width: 1000px;
+    height: 330px;
+    margin: 50px auto 0;
+}
+.photo-list {
+    position: relative;
+    width: 392px;
+    height: 145px;
+    margin: 0 auto;
+}
+.photo-first, .photo-second, .photo-third {
+    position: absolute;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.photo-first {
+    width: 125px;
+    height: 125px;
+    top: 0;
+    left: 126px;
+    z-index: 3;
+    background-image: url(img/photo-middle-color.png);
+}
+.photo-second {
+    width: 85px;
+    height: 85px;
+    top: 31px;
+    left: 305px;
+    z-index: 1;
+    background-image: url(img/photo-right-color.png);
+}
+.photo-third {
+    width: 85px;
+    height: 85px;
+    top: 31px;
+    left: 0px;
+    z-index: 2;
+    background-image: url(img/photo-left-color.png);
+}
+.photo-item.active {
+    padding: 5px;
+    border: 3px solid #D28D51;
+    background-position: 5px;
+    background-clip: content-box;
+}
+.photo-item > img { display: none; }
+.photo-item.active > img { display: block; }
+.comment-list {
+    position: relative;
+    height: 95px;
+    margin-top: 40px;
+}
+.comment-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.comment-item.active {
+    display: block;
+}
+.comment-description, .comment-people {
+    text-align: center;
+    font-size: 16px;
+}
+.comment-description {
+	width: 70%;
+	margin: 0 auto;
+    line-height: 29px;
+}
+.comment-people {
+    margin-top: 15px;
+}
+.prev-comment, .next-comment {
+    position: absolute;
+    top: 146px;
+    display: block;
+    width: 35px;
+    height: 38px;
+    background-image: url(img/prev-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.next-comment {
+    right: 0;
+    background-image: url(img/next-arrow.png);
+}
+.more-comment-btn {
+    display: block;
+    width: 175px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #D28D51;
+    margin: 60px auto;
+    transition: all 0.2s;
+}
+.more-comment-btn:hover {
+    background-color: #cd8141;
+    color: #FFA759;
+}
+.comment-mob { display: none; }
+/* 弹窗，更多参会感言 */
+.feel-dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 20;
+	display: none;
+}
+.feel-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: 2100;
+    overflow: hidden;
+    background: #fff;
+}
+.feel-container .close {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 30px;
+    font-size: 35px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.feel-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 700px;
+    margin-top: -350px;
+    margin-left: -400px;
+    overflow-y: scroll;
+}
+.feel-item {
+	width: 757px;
+	margin: 0 auto 30px;
+	/*padding-top: 60px;*/
+}
+.feel-item p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+}
+.feel-item em {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    font-style: normal;
+    display: block;
+    margin-top: 10px;
+}
+/* 搭配购买，加倍划算 */
+.favorable {
+    height: auto;
+    padding-bottom: 80px;
+}
+.favorable-list {
+    margin-top: 50px;
+}
+.favorable-item {
+    border-top: 1px solid #c5c5c5;
+    padding: 25px 0;
+    overflow: hidden;
+}
+.favorable-item:last-child {
+    border-bottom: 1px solid #979797;
+}
+.activity-logo, .activity-info, .activity-price {
+    display: inline-block;
+    vertical-align: middle;
+}
+.activity-logo {
+    box-sizing: border-box;
+    width: 135px;
+    padding-left: 35px;
+}
+.activity-logo > img {
+	transform: scale(0.9);
+}
+.activity-info { width: 420px; }
+.activity-title { color: #393939; }
+.activity-intro {
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.activity-price {
+    width: 635px;
+}
+
+.original-price, .favorable-price {
+    display: inline-block;
+    vertical-align: middle;
+}
+.original-price {
+    width: 305px;
+    font-size: 19px;
+    text-align: right;
+}
+.favorable-price {
+    width: 325px;
+    font-size: 19px;
+    text-align: center;
+}
+.favorable-price > span, .dropdown-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 195px;
+}
+.dropdown-arrow {
+    width: 28px;
+    height: 15px;
+    cursor: pointer;
+    transition: all 0.1s;
+    background: url(img/dropdown-arrow.png) 0px 0px no-repeat;
+}
+.dropdown-arrow.active {
+	background-position: -29px 0;
+}
+.apply-btn {
+    display: block;
+    width: 185px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #D28D51;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 60px auto 0;
+    transition: all 0.2s;
+}
+.apply-btn:hover {
+    background-color: #cd8141;
+    color: #FFA759;
+}
+.favorable-list-mob { display: none; }
+/* footer */
+footer {
+    height: 613px;
+    background-image: url(img/footer-bg.jpg);
+    background-repeat: no-repeat;
+}
+footer .coupon-item-title { color: #fff; }
+footer .underline { background-color: #fff; }
+.footer-list {
+    height: 130px;
+    margin: 115px 0 0 0;
+}
+.footer-item {
+    height: 100%;
+    float: left;
+    margin-right: 80px;
+}
+.footer-item:last-child {
+    margin-right: 0;
+    float: right;
+}
+.footer-left-icon, .footer-right-content, .left-divide {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-left-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer-right-content {
+    height: 100%;
+    color: #fff;
+    padding-left: 10px;
+}
+.left-divide {
+	width: 1px;
+	height: 90%;
+	background-color: #fff;
+}
+.footer-item-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+.footer-right-content p {
+    font-size: 17px;
+    line-height: 25px;
+}
+.icon-1 {
+    background-image: url(img/icon-1.png);
+}
+.icon-2 {
+    background-image: url(img/icon-2.png);
+}
+.icon-3 {
+    background-image: url(img/icon-3.png);
+}
+.footer-link {
+    color: #fff;
+    transition: all 0.2s;
+}
+.footer-link:hover { color: #ffc78b; }
+/* copyright */
+.copyright p {
+    line-height: 65px;
+    color: #807F7F;
+    background-color: #2C2A2A;
+    text-align: center;
+}
+/***** 1440 *****/
+@media screen and (max-width: 1440px) {
+    .banner-content { margin-top: 130px; }
+    .arrow { margin-top: 100px; }
+
+    .activity-hmc, .activity-adc, .activity-webinar { margin-left: 200px; }
+    .activity-tdc, .activity-tday { margin-right: 100px; }
+
+    .tday-bg { background-image: url(img/tday1440-bg.jpg); }
+}
+/***** 1366 *****/
+@media screen and (max-width: 1366px) {
+    .banner-content {
+        height: 630px;
+        margin-top: 85px;
+    }
+    .banner-title {
+        margin: 0;
+        transform: scale(0.8);
+    }
+    .banner-text {
+    	width: 650px;
+    	text-align: left;
+    	margin: 0 auto;
+    	font-size: 19px;
+    	line-height: 35px;
+        margin-top: -20px;
+    }
+    .arrow { margin-top: 55px; }
+    .coupon-item-title { margin: 120px auto 0; }
+    .coupon-item-title > h1 > img { transform: scale(0.8); }
+    
+    /* 基础套餐，超值票价 */
+    .industry-type { font-size: 20px; }
+    .ticket-title { font-size: 18px; }
+   	.ticket-table {
+   		width: 1100px;
+   		margin: 50px auto 0;
+   	}
+   	.ticket-column { width: 335px; }
+
+   	/* 品质活动，抢先占座 */
+   	.activity-item { height: 400px; }
+   	.hmc-title, .tdc-title, .adc-title, .tday-title, .webinar-title { margin-bottom: 40px; }
+   	.activity-hmc, .activity-adc  { margin: 62px 0 62px 160px; }
+	.activity-tdc, .activity-tday, .activity-webinar { margin-top: 75px; }
+	.activity-webinar { margin-top: 115px; }
+    .tday-bg { background-image: url(img/activity-3.jpg); }
+    
+	
+	/* 评价 */
+	.comment { height: 700px; }
+
+    /* 弹窗，更多参会感言 */
+    .feel-list {
+        height: 500px;
+        margin-top: -250px;
+    }
+	
+	/* 搭配购买，加倍划算 */
+	.favorable-list {
+		width: 1100px;
+		margin: 50px auto 0;
+	}
+	.activity-logo { width: 125px; }
+	.activity-logo > img { transform: scale(0.8); }
+	.activity-title { font-size: 18px; }
+	.activity-price { width: 545px; }
+	.original-price { width: 260px; }
+	.favorable-price { width: 280px; }
+	.original-price, .favorable-price { font-size: 18px; }
+	
+	/* footer */
+	.footer-item-title { font-size: 20px; }
+}
+/***** 手机端 *****/
+@media screen and (max-width: 640px) {
+    html, body {
+        min-width: 320px;
+    }
+    .container {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    /* 顶部导航 汉堡菜单 */
+    nav { display: none; }
+    .hamburger { display: block; }
+    .nav-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        float: none;
+    }
+    .nav-item:last-child {
+        width: 100%;
+        height: auto;
+        line-height: inherit;;
+        text-align: center;
+        margin: 0;
+        background-color: #fff;
+        color: #5c5c5c;
+    }
+
+    /* banner */
+    .banner {
+    	height: auto;
+        background-image: url(img/banner-mob.jpg);
+        background-position: center;
+    }
+    .banner-content {
+        width: 100%;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    .banner-title {
+        width: 100%;
+        transform: scale(1);
+        margin-top: 30px;
+    }
+    .banner-title-img { display: none; }
+    .banner-title-mob {
+        display: block;
+        width: 88%;
+        margin: 0 auto;
+    }
+    .banner-text {
+        width: 100%;
+        margin-top: 45px;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: justify;
+        text-justify: inter-ideograph;
+    }
+    .banner-text strong { font-size: 40px; }
+
+    /* 基础套餐，超值票价 */
+    .ticket-group > .container {
+        width: 100%;
+    }
+    .coupon-item-title { margin-top: 50px; }
+    .underline {
+    	width: 115px;
+    	margin: 2px auto 0;
+    }
+    .coupon-item-title > h1 > img { width: 85%; }
+    .ticket-table { display: none; }
+    .ticket-mob-bullets { display: block; }
+    .ticket-mob-container {
+        display: block;
+        position: relative;
+        width: 95%;
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;
+    }
+    .ticket-list-mob {
+        display: flex;
+        text-align: center;
+        color: #000;
+    }
+    .ticket-item-mob {
+        box-sizing: border-box;
+        padding: 0 4%;
+        border: 1px solid #979797;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .category-title-mob {
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 10px;
+        margin-top: 35px;
+    }
+    .category-title-mob > p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #D28D51;
+    }
+    .category-item-mob {
+        border-top: 1px solid #C8C8C8;
+        padding: 20px 0;
+    }
+    .ticket-title-mob > h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        line-height: 19px;
+    }
+    .ticket-title-mob > p { font-size: 12px; }
+    .standard-price-mob, .coupon-price-mob {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+    }
+    .coupon-price { margin-top: 0; }
+    .standard-price-mob em, .coupon-price-mob em {
+        font-size: 12px;
+        font-weight: normal;
+        color: #000;
+    }
+    .standard-price-mob {
+        position: relative;
+    }
+    .standard-price, .coupon-price { font-size: 12px; }
+    .standard-price-mob .del {
+        width: 110px;
+        top: 10px;
+    }
+    .buy-btn-mob {
+    	width: 140px;
+    	height: 40px;
+    	line-height: 40px;
+    	background-color: #D28D51;
+    	color: #fff;
+    	margin-top: 10px;
+    }
+    .tips-mob-wrapper {
+        display: block;
+        width: 90%;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+    .tips-arrow {
+        display: inline-block;
+        width: 23px;
+        height: 9px;
+        background-image: url(img/go-arrow.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 5px;
+    }
+        /* 点击后的样式 */
+    .tips-show { color: #d28d51; }
+    .tips-show .tips-arrow {
+        background-image: url(img/go-arrow2.png);
+    }
+    .tips-mob-wrapper i {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url(img/tips.jpg) no-repeat;
+        margin-right: 10px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    .tips-mob-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 50px 5%;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #d28d51;
+        z-index: 3001;
+    }
+    .tips-mob-content h3 {
+        font-size: 22px;
+        line-height: 30px;
+        color: #d28d51;
+        font-weight: normal;
+        margin-bottom: 23px;
+    }
+    .tips-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        background: url(img/close.png) #d9d8d3 no-repeat;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .tips-mob-content p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        padding-left: 23px;
+        position: relative;
+    }
+    .tips-num-mob {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .ticket-mob-bullets {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .ticket-mob-bullet {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #525252;
+        margin: 0 5px;
+    }
+    .ticket-mob-bullet.active { background-color: #D28D51; }
+
+    /* 品质活动，抢先占座 */
+    /*.activity { padding-bottom: 50px; }*/
+    .activity-list { display: none; }
+    .activity-list-mob {
+        display: block;
+        margin-top: 50px;
+    }
+    .activity-mob-bg > img {
+        width: 100%;
+    }
+    .activity-mob-info {
+        width: 90%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    .activity-title-mob {
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .activity-intro-mob {
+        margin: 10px 0 50px;
+        line-height: 25px;
+    }
+    .activity-mob-link {
+        display: block;
+        width: 175px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-top: 1px solid #393939;
+        border-bottom: 1px solid #393939;
+        color: #5C5C5C;
+        margin: 30px auto 50px;
+        transition: all 0.2s;
+    }
+    .activity-mob-link:hover {
+        border-color: #D28D51;
+        color: #D28D51;
+    }
+
+    /* 评价 */
+    .comment { height: auto; }
+    .comment-wrapper { display: none; }
+    .comment-mob { display: block; }
+    .comment-mob { margin: 50px 0; }
+    .photo-mob {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid #D28D51;
+        margin: 0 auto;
+    }
+    .comment-description-mob {
+        margin-top: 25px;
+        line-height: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .comment-people-mob {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .comment-index-mob {
+        position: initial;
+        bottom: 0;
+        left: 0;
+        margin-top: 25px;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #525252;
+        margin: 0 5px;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #D28D51;
+    }
+    .more-comment-btn {
+    	display: none;
+    }
+    
+    /* 弹窗 更多参会感言 */
+   	.feel-dialog-wrapper {
+   		width: 100%;
+   	}
+   	.feel-container {
+   		box-sizing: border-box;
+   		width: 90%;
+   		height: 450px;
+   		margin: 0;
+   		padding: 35px;
+		transform: translate(-50%, -50%);
+   	}
+   	.feel-list {
+   		height: 350px;
+   		overflow-y: scroll;
+   		margin-top: 0;
+   	}
+   	.feel-item {
+   		width: 100%;
+   		margin-bottom: 15px;
+   	}
+   	.feel-item em, .feel-item p { font-size: 14px; }
+    /* 搭配购买，加倍划算 */
+    .favorable-list { display: none; }
+    .favorable-list-mob { display: block; margin-top: 50px; }
+    .favorable-item-mob {
+        padding: 20px 0;
+        border-top: 1px solid #979797;
+    }
+    .favorable-item-mob:last-child { border-bottom: 1px solid #979797; }
+    .favorable-item-mob:last-child > .activity-logo-mob > img {
+        transform: scale(1);
+        width: 35px;
+        margin: 0 auto;
+    }
+    .activity-name-mobcontainer {
+        overflow: hidden;
+    }
+    .activity-logo-mob, .activity-info-mob {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .activity-logo-mob, .activity-logo-mob > img { width: 50px; }
+	.activity-logo-mob > img { transform: scale(0.8); }
+    .activity-info-mob {
+        width: calc(100% - 80px);
+        margin-left: 10px;
+    }
+    .activity-name-mob {
+        font-size: 15px;
+    }
+    .activity-text-mob {
+        font-size: 12px;
+        margin-top: 5px;
+        line-height: 20px;
+        display: none;
+    }
+    .activity-price-mob > .standard-price, .activity-price-mob > .favorable-price {
+        width: auto;
+        font-size: 12px;
+    }
+    .activity-price-mob > .standard-price {
+        margin-right: 10px;
+    }
+    /* footer */
+    footer {
+        background-image: url(img/footer-mob-bg.jpg);
+        height: auto;
+    }
+    .footer-list {
+        height: auto;
+        margin-top: 60px;
+    }
+    .footer-item {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .footer-item:last-child { float: none; }
+    .footer-left-icon {
+    	width: 80px;
+    	height: 80px;
+    	margin-right: 10px;
+    }
+    .footer-right-content {
+        width: -webkit-calc(100% - 106px);
+        width: calc(100% - 106px);
+        border-left: 1px solid #fff;
+    }
+    .left-divide { /*height: 110px;*/ display: none; }
+}
