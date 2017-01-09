@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge, chrome=1">
+        <title>A coupon website</title>
+        <link rel="stylesheet" href="/css/basic.css">
+        <link rel="stylesheet" href="/css/register.css?v=1.0">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <div class="logo lt">
+                	<a href="http://www.traveldaily.cn/" target="_blank">
+	                    <img src="/css/img/logo.png">
+                	</a>
+                </div>
+                <div class="step-menu rt">
+                    <div class="step-item step-1 active">
+                        <p>1.选择联票方案</p>
+                        <i></i>
+                    </div>
+                    <div class="step-item step-2">
+                        <p>2.检查方案权益和价格</p>
+                        <i></i>
+                    </div>
+                    <div class="step-item step-3">
+                        <p>3.填写联系方式和发票信息</p>
+                        <i></i>
+                    </div>
+                    <b class="arrow"></b>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-mob">
+        	<div class="nav-mob-item active">
+        		<i style="background-image: url(/css/img/nav-mob1.png);"></i>
+        		<p>选择方案</p>
+        	</div>
+        	<div class="nav-mob-item">
+        		<i style="background-image: url(/css/img/nav-mob2.png);"></i>
+        		<p>检查方案</p>
+        	</div>
+        	<div class="nav-mob-item">
+        		<i style="background-image: url(/css/img/nav-mob3.png);"></i>
+        		<p>填写信息</p>
+        	</div>
+        </div>
+        <div class="step-wrapper">
+            <!-- 1 选择联票方案 -->
+            <div class="step-list active" id="step-1">
+                <div class="step-info">
+                    <span class="step-num">1.</span>
+                    <h1 class="step-title">您选择的是<span class="industry-type" id="industry-type">酒店业</span>联票方案</h1>
+                </div>
+                <div class="industry">
+                    <!-- 酒店业 -->
+                    <div class="industry-item active" data-type="23">
+                        <div class="industry-info lt">
+                            <div class="industry-info-container">
+                                <h2 class="industry-info-title">酒店业联票</h2>
+                                <p>
+                                    <strong class="industry-price-container">￥<span class="industry-price">3500</span></strong>
+                                    <span>元/套</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="industry-intro rt">
+                        	<h3 class="industry-contains">酒店业联票价格包含以下权益：</h3>
+                        	<ol class="contains-list">
+                        		<li class="contains-item">
+                        			<span>2017 中国酒店营销峰会（1 张门票，含午餐）</span>
+                        		</li>
+                        		<li class="contains-item">
+                        			<span> 2017 环球旅讯峰会（1 张门票，含午餐）</span>
+                        		</li>
+                        		<li class="contains-item">
+                        			<span>2017 旅讯开放日通票（年度通票，可参与任意场次，合计 6 张门票）</span>
+                        		</li>
+                        		<li class="contains-item">
+                        			<span>2017 在线讲堂通票（年度通票，可参与任意场次，合计 10 张门票）</span>
+                        		</li>
+                        	</ol>
+                            <p class="attention-tips">
+                            	注: 此联票方案仅适用于中国大陆企业，港澳台及海外企业不适用该联票方案。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 其他旅游企业 -->
+                    <div class="industry-item" data-type="1">
+                        <div class="industry-info lt">
+                            <div class="industry-info-container">
+                                <h2 class="industry-info-title">其他旅游企业联票</h2>
+                                <p>
+                                    <strong class="industry-price-container">￥<span class="industry-price">3800</span></strong>
+                                    <span>元/套</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="industry-intro rt">
+                            <h3 class="industry-contains">其他旅游企业联票价格包含以下权益：</h3>
+                            <ol class="contains-list">
+                                <li class="contains-item">
+                                    <span>2017 中国酒店<span class="adc-ticket">或航空</span>营销峰会（1 张门票，含午餐）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span> 2017 环球旅讯峰会（1 张门票，含午餐）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span>2017 旅讯开放日通票（年度通票，可参与任意场次，合计 6 张门票）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span>2017 在线讲堂通票（年度通票，可参与任意场次，合计 10 张门票）</span>
+                                </li>
+                            </ol>
+                            <p class="attention-tips">
+                            	注: 此联票方案仅适用于中国大陆企业，港澳台及海外企业不适用该联票方案。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 非旅游企业 -->
+                    <div class="industry-item" data-type="3">
+                        <div class="industry-info lt">
+                            <div class="industry-info-container">
+                                <h2 class="industry-info-title">非旅游企业联票</h2>
+                                <p>
+                                    <strong class="industry-price-container">￥<span class="industry-price">5000</span></strong>
+                                    <span>元/套</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="industry-intro rt">
+                            <h3 class="industry-contains">非旅游企业联票价格包含以下权益：</h3>
+                            <ol class="contains-list">
+                                <li class="contains-item">
+                                    <span>2017 中国酒店<span class="adc-ticket">或航空</span>营销峰会（1 张门票，含午餐）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span> 2017 环球旅讯峰会（1 张门票，含午餐）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span>2017 旅讯开放日通票（年度通票，可参与任意场次，合计 6 张门票）</span>
+                                </li>
+                                <li class="contains-item">
+                                    <span>2017 在线讲堂通票（年度通票，可参与任意场次，合计 10 张门票）</span>
+                                </li>
+                            </ol>
+                            <p class="attention-tips">
+                            	注: 此联票方案仅适用于中国大陆企业，港澳台及海外企业不适用该联票方案。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-ticket-container">
+                    <div class="buy-ticket-content rt">
+                        <p class="choose-ticket-text">选择需要购买的联票套数：</p>
+                        <div class="ticket-count-wrapper">
+                            <div class="reduce">-</div>
+                            <div class="ticket-count-container">
+                                <span class="ticket-count" data-value="1">1</span>
+                                <span>套</span>
+                            </div>
+                            <div class="add">+</div>
+                        </div>
+                    </div>
+                    <div class="buy-ticket-mob">
+                    	<p class="choose-ticket-text" style="display: block;">选择需要购买的联票套数：</p>
+                    	<div class="ticket-mob-item">
+                    		<span class="ticket-num-mob" data-value="1">1</span>
+                    		<span>套</span>
+                    	</div>
+                    	<div class="ticket-mob-item">
+                    		<span class="ticket-num-mob" data-value="2">2</span>
+                    		<span>套</span>
+                    	</div>
+                    	<div class="ticket-mob-item">
+                    		<span class="ticket-num-mob" data-value="3">3</span>
+                    		<span>套</span>
+                    	</div>
+                    	<div class="ticket-mob-item" style="position: relative;">
+                    		<div class="ticket-choose-mobcontainer"><span class="ticket-choose-mob">4</span>套</div>
+	                    	<select class="multiple-choose">
+	                    		<option value="4">4</option>
+	                    		<option value="5">5</option>
+	                    		<option value="6">6</option>
+	                    		<option value="7">7</option>
+	                    		<option value="8">8</option>
+	                    		<option value="9">9</option>
+	                    		<option value="10">10</option>
+	                    		<option value="11">11</option>
+	                    		<option value="12">12</option>
+	                    		<option value="13">13</option>
+	                    		<option value="14">14</option>
+	                    		<option value="15">15</option>
+	                    		<option value="16">16</option>
+	                    		<option value="17">17</option>
+	                    		<option value="18">18</option>
+	                    		<option value="19">19</option>
+	                    		<option value="20">20</option>
+	                    	</select>
+                    	</div>
+                    </div>
+                </div>
+                <!-- 其他活动门票和营销服务的入口 -->
+                <div class="other-entrance">
+                	<h2 class="entrance-title">搭配购买更多活动门票或营销服务，价格更优</h2>
+                    <!-- 活动门票 -->
+                    <div class="activity-entrance lt">
+                        <div class="entrance-container">
+                            <h2 class="entrance-name">活动门票</h2>
+                            <p class="entrance-text">包括中国酒店营销峰会、环球旅讯峰会、中国航空营销峰会、峰会晚宴（单场）、旅讯开放日（单场）和旅讯在线讲堂（单场）均可自由搭配购买，并享受优惠折扣价。</p>
+                            <a href="javascript:;" class="entrance-btn" id="activityEntrance">去看看</a>
+                        </div>
+                    </div>
+                    <!-- 营销服务 -->
+                    <div class="marketing-service-entrance rt">
+                        <div class="entrance-container">
+                            <h2 class="entrance-name">营销服务</h2>
+                            <p class="entrance-text">搭配购买环球旅讯微招聘、企业专区新闻稿、网站广告、新闻电子邮件广告、峰会现场 T 板 Logo、会刊广告等权益，低预算即可满足您在旅游业的精准营销和推广需求。</p>
+                            <a href="javascript:;" class="entrance-btn" id="marketingServiceEntrance">去看看</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="javascript:;" class="next-btn rt" id="directNextStep">下一步，检查方案权益和价格</a>
+                </div>
+            </div>
+            <!-- 搭配购买活动门票（非必选） -->
+            <div class="step-list" id="step-activity">
+            	<div class="step-info">
+                    <h1 class="step-title">请选择您需要搭配购买的活动门票（非必选）</h1>
+                </div>
+                <ul class="more-service-list">
+                    <li class="more-service-item" data-option="42">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">2017 中国酒店营销峰会门票（含午餐）</h3>
+                                    <p class="service-item-intro">
+                                    	2017 峰会将有超过 700 位来自国际和国内大型连锁酒店集团、经济型连锁酒店、精品酒店、单体酒店以及相关产业的中高层管理者出席。
+                                    	<a href="http://event.traveldaily.cn/hmc2016/attendeeslist" target="_blank">查看 2016 参会名录>></a>
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥<span class="combine-standard-price" data-standard-price="1800">1880</span></span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum combine-favorable-price" data-favorable-price="1600">1600</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">2017 中国酒店营销峰会门票（含午餐）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="41">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">2017 环球旅讯峰会门票（含午餐）</h3>
+                                    <p class="service-item-intro">
+                                    	自 2008 年至今已成功举办 8 届，累计邀请 500 位业界领袖出席演讲，参会嘉宾超过 7000 人，是全球旅游业界最具影响力的年度盛会。
+                                    	<a href="http://event.traveldaily.cn/tdc2016/attendeeslist" target="_blank">查看 2016 参会名录>></a>
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥<span class="combine-standard-price" data-standard-price="1980">1980</span></span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum combine-favorable-price" data-favorable-price="1750">1750</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">2017 环球旅讯峰会门票（含午餐）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="43">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">2017 航空营销峰会门票（含午餐）</h3>
+                                    <p class="service-item-intro">
+                                    	2017 峰会将有超过700位来自国内和全球航空公司、GDS、OTA、机票代理人、TMC以及相关产业的中高层管理者出席。
+                                    	<a href="http://event.traveldaily.cn/adc2016/attendeeslist" target="_blank">查看 2016 参会名录>></a>
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥<span class="combine-standard-price" data-standard-price="2180">2180</span></span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum combine-favorable-price" data-favorable-price="1900">1900</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">2017 航空营销峰会门票（含午餐）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="50">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">峰会晚宴（单场）</h3>
+                                    <p class="service-item-intro">
+                                    	可出席 3 场峰会中任意一场的 VIP 晚宴。晚宴为演讲嘉宾及特邀重要嘉宾专设，仅公开售卖少量门票。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥600</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="500">500</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">峰会晚宴（单场）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item isShowMoreService" data-option="44">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">旅讯开放日门票（单场）</h3>
+                                    <p class="service-item-intro">
+                                    	定期举办的关于热门行业话题 / 产品，以及新产品、新趋势、新科技的分享交流活动。2017年预计将在北上广深一线城市以及部分二线城市举办 6 场开放日活动。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥390</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="99">99</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">旅讯开放日门票（单场）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item isShowMoreService" data-option="46">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon2.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">在线讲堂</h3>
+                                    <p class="service-item-intro">
+                                    	邀请业内知名专家结合行业/产品新趋势、新科技、新模式话题进行在线分享。该活动每月举办一期，参会嘉宾在线听讲即可。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥390</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="99">99</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">在线讲堂</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="47" style="margin-bottom: 0;">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/activity-ticket-icon2.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">线下培训会门票（单场）</h3>
+                                    <p class="service-item-intro">
+                                    	由环球旅讯联合知名业内专家打造的精品课程——为期 3 天的线下培训会，专注某个细分领域话题，如收益管理、忠诚度计划等等。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥4800</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="2800">2800</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">线下培训会门票（单场）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <a class="prev-btn lt" id="backBtn" href="javascript:;">返回上一步</a>
+                    <a class="next-btn rt" id="nextBtn" href="javascript:;">下一步</a>
+                    <a class="toMarketingService rt" id="toMarketingService" href="javascript:;">继续搭配购买营销服务</a>
+                </div>
+            </div>
+            <!-- 搭配购买营销服务（非必选） -->
+            <div class="step-list" id="step-marketing-service">
+                <div class="step-info">
+                    <h1 class="step-title">请选择您需要搭配购买的营销服务（非必选）</h1>
+                </div>
+                <ul class="more-service-list">
+                    <li class="more-service-item" data-option="151">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon1.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">微招聘服务</h3>
+                                    <p class="service-item-intro">
+                                    	通过环球旅讯微信和新闻网站，向行业读者推送您的招聘信息。
+                                    	<a href="http://www.traveldaily.cn/job" target="_blank">查看最新一期>></a>
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥3000/期</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="1500">1500</span>/期</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">微招聘服务</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="152">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon2.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">企业专区新闻稿</h3>
+                                    <p class="service-item-intro">
+                                    	环球旅讯作为百度“新闻源”，新闻稿除在环球旅讯网站“企业专区”发布外，还将被百度收录。新闻稿由企业方提供。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥5000/5篇</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span>
+                                            <span>￥<span class="favorable-price-sum" data-favorable-price="3000">3000</span>/5篇</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">企业专区新闻稿</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="153">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon3.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">峰会 T 板 Logo 展示（单场）</h3>
+                                    <p class="service-item-intro">
+                                    	企业方作为“2017 联票企业会员”，LOGO将在环球旅讯 2017 年举办的年度峰会现场 T型展示板展示。T 型展示板位于峰会现场展览区域。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥3000</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="1800">1800</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">峰会 T 板 Logo 展示（单场）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="154">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon4.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">峰会会刊广告（1页）</h3>
+                                    <p class="service-item-intro">
+                                    	在 3 场峰会的任何一场中，将您的广告信息（1页）添加至人手一本的会刊，向参会嘉宾展示品牌信息。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥8000</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="5000">5000</span></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">峰会会刊广告（1页）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="155">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon5.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">网站广告（B3 位置）</h3>
+                                    <p class="service-item-intro">
+                                    	B3位于核心资讯频道（在线旅游/酒店/航空任选其一）的显著位置。<a href="/css/img/TravelDaily_Advertising_Rate_2017.pdf" target="_blank">点击此处</a>下载详细广告刊例，如有其他个性化需求，也可以联系我们020—2882 9757。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥12500/2周</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="10000">10000</span>/2周</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">网站广告（B3 位置）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="156">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon5.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">网站广告（B6 位置）</h3>
+                                    <p class="service-item-intro">
+                                    	B6位于资讯频道（任选其一）的显著位置。<a href="/css/img/TravelDaily_Advertising_Rate_2017.pdf" target="_blank">点击此处</a>下载详细广告刊例，如有其他个性化需求，也可以联系我们020—2882 9757。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥8000/2周</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="6400">6400</span>/2周</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">网站广告（B6 位置）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="157" style="margin-bottom: 0;">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon6.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">每周新闻邮件广告（D3 位置）</h3>
+                                    <p class="service-item-intro">
+                                    	D3位于每周新闻邮件的显著位置。每周新闻邮件精选行业最具价值的新闻，每周二定期发送至30,000+环球旅讯订阅用户。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥3000/期</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="2400">2400</span>/期</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">每周新闻邮件广告（D3 位置）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                    <li class="more-service-item" data-option="158">
+                    	<label>
+                    		<input type="checkbox" class="choose-checkbox" />
+                    		<i></i>
+                    	</label>
+                        <div class="service-item-container">
+                            <div class="service-item-content">
+                                <div class="service-item-logo">
+                                    <img src="/css/img/service-icon6.png">
+                                </div>
+                                <div class="service-item-info">
+                                    <h3 class="service-item-title">每周新闻邮件广告（D2 位置）</h3>
+                                    <p class="service-item-intro">
+                                    	D2位于每周新闻邮件的显著位置。每周新闻邮件精选行业最具价值的新闻，每周二定期发送至30,000+环球旅讯订阅用户。
+                                    </p>
+                                    <p>
+                                        <span class="standard-price">
+                                            <span>标准价：</span><span>￥5000/期</span>
+                                        </span>
+                                        <span class="favorable-price">
+                                            <span>优惠价：</span><span>￥<span class="favorable-price-sum" data-favorable-price="4000">4000</span>/期</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 购买 -->
+                            <div class="service-num">
+                                <h3 class="service-item-title">每周新闻邮件广告（D2 位置）</h3>
+                                <span class="reduce">-</span>
+                                <span class="service-num-content">
+                                    <span class="service-count" data-value="0">0</span>
+                                    @*<b>套</b>*@
+                                </span>
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <!-- 关闭按钮 -->
+                        <div class="close">×</div>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <a class="prev-btn lt" id="prevBtn" href="javascript:;">返回上一步</a>
+                    <a class="next-btn rt" id="continueBtn" href="javascript:;">下一步</a>
+                    <a class="toActivity rt" id="toActivity" href="javascript:;">继续搭配购买活动门票</a>
+                </div>
+            </div>
+            <!-- 2 检查选择的方案及价格 -->
+            <div class="step-list" id="step-2">
+                <div class="step-info">
+                    <span class="step-num">2.</span>
+                    <h1 class="step-title">检查选择的方案及价格</h1>
+                </div>
+                <div class="check-container">
+                    <div class="check-list">
+                        <div class="check-item">
+                            <div class="check-name lt">
+                            	基础套餐
+                                <span class="check-divide-mob"></span>
+                            </div>
+                            <div class="check-info rt">
+                                <div class="check-description">
+                                    <h2 class="check-title lt">2017 年<span id="industry-name">旅游企业</span>联票</h2>
+                                    <span class="check-price rt">￥<span class="price-num" id="price-sum">3680</span></span>
+                                    <p class="check-num-mob">
+                                        数量：
+                                        @*<span class="ticket-quantity-mob" id="ticket-count-mob">0</span>*@
+                                        @*<input type="number" min="1" value="1" class="ticket-quantity-mob" id="ticket-count-mob">*@
+                                        <input type="number" min="1" value="1" id="ticket-count-mob">
+                                    </p>
+                                </div>
+                                <div class="contain-list">
+                                    <div class="contain-item">
+                                        <p class="contain-content lt">
+                                            2016 中国酒店<span class="adc-name">或航空</span>营销峰会门票（1 张，含午餐）
+                                        </p>
+                                        <p class="check-num rt">
+                                            数量：
+                                            @*<span class="ticket-quantity" id="ticket-sum">0</span>*@
+                                            @*<input type="number" min="1" value="1" class="ticket-quantity" id="ticket-sum">*@
+                                            <input type="number" min="1" value="1" id="ticket-sum">
+                                        </p>
+                                    </div>
+                                    <div class="contain-item">
+                                        <p class="contain-content lt">
+                                            2016 环球旅讯峰会门票（1 张，含午餐）
+                                        </p>
+                                    </div>
+                                    <div class="contain-item">
+                                        <p class="contain-content lt">
+                                            2016 旅讯开放日通票（一年内 6 场通票，免审核）
+                                        </p>
+                                    </div>
+                                    <div class="contain-item">
+                                        <p class="contain-content lt">
+                                            2016 在线培训会（一年内 10 场通票，免审核）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-item collocation">
+                            @*<div class="check-name lt">
+                            	搭配购买
+                                <span class="check-divide-mob"></span>
+                            </div>*@
+                            @*<div class="check-info rt">
+                                <div class="check-description">
+                                    <h2 class="check-title lt">2017 中国酒店营销高峰论坛门票（含午餐）</h2>
+                                    <span class="check-price rt">￥<span class="price-num">0</span></span>
+                                    <p class="check-num-mob">
+                                        数量：
+                                        <!--<span class="ticket-quantity-mob" id="ticket-hmc-mob">0</span>-->
+                                        <input type="number" class="ticket-quantity-mob" data-price="2000" value="0" onchange="alert(this.value)">
+                                    </p>
+                                </div>
+                                <div class="contain-list">
+                                    <div class="contain-item">
+                                        <p class="check-num rt">
+                                            数量：
+                                            <!--<span class="ticket-quantity" id="ticket-hmc">0</span>-->
+                                            <input type="number" class="ticket-quantity" data-price="1000" value="0" onchange="alert(this.value)">
+                                        </p>
+                                    </div>
+                                    <div class="contain-item">
+                                        <p class="delete-item rt">删除</p>
+                                    </div>
+                                </div>
+                            </div>*@
+                            @*<div class="check-info rt">
+                                <div class="check-description">
+                                    <h2 class="check-title lt">2017 环球旅讯峰会门票（含午餐）</h2>
+                                    <span class="check-price rt">￥<em class="price-num">0</em></span>
+                                    <p class="check-num-mob">
+                                        数量：
+                                        <!--<span class="ticket-quantity-mob" id="ticket-tdc-mob">0</span>-->
+                                        <input type="number" class="ticket-quantity-mob" data-price="2000" value="0" onchange="alert(this.value)">
+                                    </p>
+                                </div>
+                                <div class="contain-list">
+                                    <div class="contain-item">
+                                        <p class="check-num rt">
+                                            数量：
+                                            <!--<span class="ticket-quantity" id="ticket-tdc">0</span>-->
+                                            <input type="number" class="ticket-quantity" data-price="2000" value="0" onchange="alert(this.value)">
+                                        </p>
+                                    </div>
+                                    <div class="contain-item">
+                                        <p class="delete-item rt">删除</p>
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                        @*<div class="check-item">
+                            <div class="check-name lt">
+                            	价格计算
+                            </div>
+                            <div class="check-info rt" style="margin-bottom: 0;">
+                                <div class="check-description">
+                                    <h2 class="check-title lt">7 月优惠折扣</h2>
+                                    <span class="check-price rt">-￥<span class="discount-num">200</span></span>
+                                    <p class="check-num-mob">数量：<span class="ticket-quantity-mob">1</span></p>
+                                </div>
+                                <div class="contain-list">
+                                    <div class="contain-item">
+                                        <p class="check-num rt">数量：<span class="ticket-quantity">1</span></p>
+                                    </div>
+                                </div>
+                                <!-- 合计 -->
+                                <div class="total-container">
+                                    <h2 class="total-name lt">合计：</h2>
+                                    <p class="total-num rt">￥<span class="total-money" id="total-price">0</span></p>
+                                </div>
+                            </div>
+                        </div>*@
+                        <!-- 合计  -->
+                        <div class="total-container">
+                            <h2 class="total-name lt">合计：</h2>
+                            <p class="total-num rt">￥<span class="total-money" id="total-price">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="javascript:;" class="prev-btn lt" id="toStep1">返回上一步</a>
+                    <a href="javascript:;" class="next-btn rt" id="toStep3">下一步，填写联系方式和发票信息</a>
+                </div>
+            </div>
+            <!-- 3 填写联系方式及发票信息 -->
+            <div class="step-list" id="step-3">
+                <div class="step-info">
+                    <span class="step-num">3.</span>
+                    <h1 class="step-title">填写联系方式及发票信息</h1>
+                </div>
+                <div class="form-container">
+                    <!-- 联系人信息 -->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="input-large lt" id="fm_Name" placeholder="您的姓名">
+                            <input type="text" class="input-large rt" id="fm_Company" placeholder="公司">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input-large lt" id="fm_JobTitle" placeholder="职位">
+                            <input type="text" class="input-large rt mobile" id="fm_Mobile" placeholder="手机号码">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input-large lt email" id="fm_Mail" placeholder="邮箱">
+                            <select class="select-large rt" id="fm_Industry">
+                                <option value="0">请选择所在行业</option>
+                                <option value="77">航空公司</option>
+                                <option value="78">酒店</option>
+                                <option value="79">OTA/旅游搜索引擎</option>
+                                <option value="143">GDS</option>
+                                <option value="140">公寓/非标准住宿业（民宿等）</option>
+                                <option value="80">旅行社/机票代理人</option>
+                                <option value="81">景区/目的地</option>
+                                <option value="82">旅游局</option>
+                                <option value="83">邮轮</option>
+                                <option value="84">租车/用车</option>
+                                <option value="144">B2B分销平台/批发商</option>
+                                <option value="145">社区/攻略/点评网站</option>
+                                <option value="146">行程规划/定制游</option>
+                                <option value="147">旅游地产</option>
+                                <option value="203">TMC/MICE</option>
+                                <option value="204">综合性旅游文化企业（如万达、银座）</option>
+                                <option value="73">旅游科技（如 PMS、B2B分销技术、呼叫中心、云服务等）</option>
+                                <option value="72">数字营销（如 SEO、社交媒体营销、用户体验设计等）</option>
+                                <option value="74">商务服务（如保险、投融资、管理/咨询等）</option>
+                                <option value="75">媒体</option>
+                                <option value="76">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- 联票管理员 -->
+                    <div class="form-group">
+                    	<h2 class="form-group-title">您是联票管理员吗？</h2>
+                    	<p class="form-group-intro">
+                    		联票管理员将负责联票各活动门票/营销权益的分配及使用管理，联票权益使用等重要信息也将发送给“联票管理员”，请认真确认管理员的信息。
+                    	</p>
+                    	<div class="input-group">
+                    		<div class="principal">
+	                            <span class="input-small active" id="isDirector" data-value="1">是的</span>
+	                            <span class="input-small" id="notDirector" data-value="0">不是</span>
+	                        </div>
+                    	</div>
+                    </div>
+                    <!-- 负责人信息 -->
+                    <div class="form-group principal-container">
+                        <h2 class="form-group-title">负责人信息</h2>
+                        <div class="input-group">
+                            <input type="text" class="input-large lt" id="fm_DirectorName" placeholder="负责人姓名">
+                            <input type="text" class="input-large rt mobile" id="fm_DirectorMobile" placeholder="手机号码">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input-large lt" id="fm_DirectorJob" placeholder="职位">
+                            <input type="text" class="input-large rt email" id="fm_DirectorMail" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <!-- 发票内容 -->
+                    <div class="form-group">
+                        <h2 class="form-group-title">发票内容</h2>
+                        <div class="input-group">
+                            <div class="select-group lt">
+                                <select name="" class="select-small lt" id="fm_InvoiceType">
+                                    <option value="1">普通发票</option>
+                                    <option value="0">不需要发票</option>
+                                    <option value="2">增值税发票</option>
+                                </select>
+                                <select name="" class="select-small rt" id="fm_InvoiceContent">
+                                	<option value="0">发票内容</option>
+                                    <option value="1">会议费</option>
+                                    <option value="2">信息技术服务费</option>
+                                    <option value="3">展览费</option>
+                                </select>
+                            </div>
+                            <input type="text" class="input-large rt" placeholder="发票抬头" id="fm_InvoiceTitle">
+                        </div>
+                    </div>
+                    <!-- 增值税发票 -->
+                    <div class="form-group special-invoice">
+                        <h2 class="form-group-title">增值税发票</h2>
+                        <div class="input-group">
+	                        <input type="text" class="input-large lt" id="fm_TaxName" placeholder="公司注册名称">
+	                        <input type="text" class="input-large rt" id="fm_TaxId" placeholder="税务登记证号码">
+	                    </div>
+	                    <div class="input-group">
+	                        <input type="text" class="input-large lt" id="fm_TaxAddress" placeholder="公司注册地址">
+	                        <input type="text" class="input-large rt" id="fm_TaxPhone" placeholder="公司电话">
+	                    </div>
+	                    <div class="input-group">
+	                        <input type="text" class="input-large lt" id="fm_TaxBank" placeholder="开户银行">
+	                        <input type="text" class="input-large rt" id="fm_TaxBankAccount" placeholder="银行帐号">
+	                    </div>
+                    </div>
+                    <!-- 发票邮寄地址 -->
+                    <div class="form-group" id="invoice-addr-container">
+                        <h2 class="form-group-title">发票邮寄地址</h2>
+                        <div class="input-group">
+                            <select name="" class="select-large lt" id="ddlProvince">
+                                <option value="0">省份</option>
+                                <option value="1">北京市</option>
+                                <option value="9">上海市</option>
+                                <option value="19">广东省</option>
+                                <option value="11">浙江省</option>
+                                <option value="10">江苏省</option>
+                                <option value="23">四川省</option>
+                                <option value="2">天津市</option>
+                                <option value="3">河北省</option>
+                                <option value="4">山西省</option>
+                                <option value="5">内蒙古自治区</option>
+                                <option value="6">辽宁省</option>
+                                <option value="7">吉林省</option>
+                                <option value="8">黑龙江省</option>
+                                <option value="12">安徽省</option>
+                                <option value="13">福建省</option>
+                                <option value="14">江西省</option>
+                                <option value="15">山东省</option>
+                                <option value="16">河南省</option>
+                                <option value="17">湖北省</option>
+                                <option value="18">湖南省</option>
+                                <option value="20">广西壮族自治区</option>
+                                <option value="21">海南省</option>
+                                <option value="22">重庆市</option>
+                                <option value="24">贵州省</option>
+                                <option value="25">云南省</option>
+                                <option value="26">西藏自治区</option>
+                                <option value="27">陕西省</option>
+                                <option value="28">甘肃省</option>
+                                <option value="29">青海省</option>
+                                <option value="30">宁夏回族自治区</option>
+                                <option value="31">新疆维吾尔自治区</option>
+                            </select>
+                            <select name="" class="select-large rt" id="ddlCity">
+                                <option value="0">城市</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input-large lt invoice-addr" id="fm_Address" placeholder="详细地址">
+                            <input type="text" class="input-large rt invoice-postalcode" id="fm_Postcode" placeholder="邮政编码">
+                        </div>
+                    </div>
+                    <!-- 备注 -->
+                    <div class="form-group remark">
+                        <h2 class="form-group-title">备注<span class="no-require">（非必填）</span></h2>
+                        <textarea name="name" class="tips" placeholder="请输入文字" id="fm_Remark"></textarea>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="javascript:;" class="prev-btn lt" id="backStep2">返回上一步</a>
+                    <input type="button" class="next-btn rt" id="submitForm" value="提交">
+                </div>
+            </div>
+            <!-- 4 提交成功 -->
+            <div class="step-list" id="step-4">
+                <div class="success-container">
+                    <div class="success-identify">
+                        <img src="/css/img/success.png">
+                    </div>
+                    <h1 class="success-title">已提交</h1>
+                    <div class="attention-container">
+                        <p class="attention-info">我们将在两个工作日内与您取得联系并确认付款事宜，敬请留意。</p>
+                        <p class="attention-info">在此期间如有任何疑问，请随时通过 020-2882 9750 或 register@traveldaily.cn 联系我们</p>
+                    </div>
+                    <div class="other-news">
+                       	接下来，<a href="http://www.traveldaily.cn/" target="_blank" class="other-news-link">去看看有什么新闻？</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                @*<div class="coupon-item-title">
+                    <h1><img src="/css/img/title-img-5.png" /></h1>
+                    <p class="underline"></p>
+                </div>*@
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <div class="footer-left-icon icon-1"></div>
+                        	<i class="left-divide"></i>
+                        <div class="footer-right-content">
+                            <h1 class="footer-item-title">购买联票</h1>
+                            <p>沈惠芬 Vicky Shen</p>
+                            <p>020 - 2882 9750</p>
+                            <p>register@traveldaily.cn</p>
+                        </div>
+                    </li>
+                    <li class="footer-item">
+                        <div class="footer-left-icon icon-2"></div>
+                        	<i class="left-divide"></i>
+                        <div class="footer-right-content">
+                            <h1 class="footer-item-title">赞助活动</h1>
+                            <p>彭泳欣 Virginia Peng</p>
+                            <p>020 - 2882 9509</p>
+                            <p>virginia@traveldaily.cn</p>
+                        </div>
+                    </li>
+                    <li class="footer-item">
+                        <div class="footer-left-icon icon-3"></div>
+                        	<i class="left-divide"></i>
+                        <div class="footer-right-content">
+                            <h1 class="footer-item-title">活动回顾</h1>
+                            <p><a href="http://event.traveldaily.cn/hmc2016/report/" target="_blank" class="footer-link">2016 中国酒店营销峰会回顾专题</a></p>
+                            <p><a href="http://event.traveldaily.cn/tdc2016/report/" target="_blank" class="footer-link">2016 环球旅讯峰会回顾专题</a></p>
+                            <p><a href="http://event.traveldaily.cn/" target="_blank" class="footer-link">更多活动回顾</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>© 2016 环球旅讯版权所有</p>
+        </div>
+        <script src="http://img.traveldaily.cn/script/jquery.js"></script>
+        <script src="http://img.traveldaily.cn/script/plugins/json3.js"></script>
+        <script src="http://img.traveldaily.cn/script/plugins/layer/v2.0/layer.js"></script>
+        <script src="/script/packaged/register.js"></script>
+        <script>
+            var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?b7f75fc509e5489d6cd0e0adafb25af6"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();
+            (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-29716433-2', 'auto'); ga('send', 'pageview');
+        </script>
+    </body>
+</html>
